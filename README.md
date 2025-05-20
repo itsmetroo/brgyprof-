@@ -1,6 +1,4 @@
-## Barangay Online System (Dynamic)
-
-### Barangay Source Code at  [Barangay Online System Repository](https://github.com/vonypeto/barangay)
+## Barangay Profiling System
  
 This system require a list of program to function and run on the local device
 .
@@ -33,10 +31,8 @@ This system require a list of program to function and run on the local device
     ```
     composer update && composer install
     ```
-    note: if you have slow net and the installation failed, just repeat the process
 5. Install Xampp from this [link](https://www.apachefriends.org/index.html) 
  
-
 ## Usage
 
 1. Run Xampp first by going to the directory where you installed it and open this `xampp-control.exe` and run the `mysql service` and `apache service`
@@ -51,24 +47,13 @@ This system require a list of program to function and run on the local device
     ```
     CREATE DATABASE barangay
     ```	
-
 3. After installation process, run the following command on the directory where you clone the source code:
 
     ```
     php artisan serve && php artisan migrate && php artisan db:seed
     ```	
-note: Xampp mysql service must be running 
-
 4. Visit the link provided by the terminal such as `127.0.0.1:8000`  
 note: to run the website on localhost for developing testing just run this on the terminal where the code is `php artisan serve`
-
-To access the Server Side panel we provided a seed generated account
-
-    ```
-    Username: giann@gmail.com
-    Password: giann
-    Usertype: Admin
-    ```	
 
 ## Advanced details
 
